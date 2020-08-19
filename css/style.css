@@ -1,0 +1,171 @@
+/*reset*/
+*{ margin: 0; box-sizing: border-box;}
+a{ text-decoration: none}
+img{ vertical-align: bottom}
+iframe{ border: 0}
+ul{ list-style: none; padding: 0}
+
+/*fonts*/
+@font-face{
+    font-family:proximar;
+    src:url(../fonts/Proxima-Nova-Reg.woff) format('woff');
+}
+@font-face{
+    font-family:proximab;
+    src:url(../fonts/Proxima-Nova-Bold.woff) format('woff');
+}
+@font-face{
+    font-family:proximal;
+    font-weight:100;
+    src:url(../fonts/Proxima-Nova-Light.woff) format('woff');
+}
+
+body{ font: 14px proximar, sans-serif}
+.light{ font-family: proximal, sans-serif; font-weight: 100;}
+h1, h2, h3, h4, b, strong{ font-family: proximab, sans-serif}
+.container{ width: 1200px; margin: auto; padding: 0 15px;}
+.clear{ clear: both}
+h2{ font-size: 72px; border-bottom: 10px solid;}
+
+/*Grids*/
+.row{ margin: 0 -15px}
+.row:after{ content: ""; clear: both; display: block}
+.col-1{ width: 8.33%; padding: 0 15px; float: left }
+.col-2{ width: 16.66%; padding: 0 15px; float: left }
+.col-3{ width: 25%; padding: 0 15px; float: left }
+.col-4{ width: 33.33%; padding: 0 15px; float: left }
+.col-5{ width: 41.66%; padding: 0 15px; float: left }
+.col-6{ width: 50%; padding: 0 15px; float: left }
+.col-7{ width: 58.33%; padding: 0 15px; float: left }
+.col-8{ width: 66.66%; padding: 0 15px; float: left }
+.col-9{ width: 75%; padding: 0 15px; float: left }
+.col-10{ width: 83.33%; padding: 0 15px; float: left }
+.col-11{ width: 91.66%; padding: 0 15px; float: left }
+.col-12{ width: 100%; padding: 0 15px; float: left }
+[ class^="col"]{ min-height: 1px }
+
+
+/*Layout*/
+.wrap-1{ background: #000; color: #fff}
+.wrap-1 h1{  font-size: 30px;}
+.wrap-1 h1 a{ color: inherit;  line-height: 80px; display: inline-block}
+.wrap-1 nav{ }
+.wrap-1 nav ul{ margin-left: -20px }
+.wrap-1 nav ul li{ float: left; margin: 0 5px; }
+.wrap-1 nav ul li a{ color: inherit; display: block; line-height: 80px; padding: 0 15px}
+.btn-link{ display: inline-block;width: 90px;  border: 2px solid; color: #ca3c3c; background: transparent;  text-align: center; line-height: 31px; border-radius: 10px;  margin-top: 23px; }
+.wrap-1 .btn-link{ float: right; }
+
+
+.wrap-2{ background: #666; color: #fff; }
+.video{ padding: 200px 0}
+.video .play{ border: none; background: transparent; color: #fff; font-size: 150px; float: left; margin-right: 40px; cursor: pointer}
+.video p.light{ padding-top: 50px;  font-size: 60px; }
+.video p a{  color: #ca3c3c}
+
+.wrap-3{ background: #ca3c3c; color: #fff; padding: 20px 0}
+.feature{ margin: 30px 0 }
+.feature .circle{ width: 100px; height: 100px; border-radius: 50%; border: 2px solid ; text-align: center; line-height: 96px; font-size: 36px; float: left; margin-right: 30px}
+.feature h3{ font-size: 16px; line-height: 30px; }
+.feature p{ font-size: 14px; line-height: 22px }
+
+.wrap-4{ background: #fff; color: #ca3c3c; font-size: 36px; line-height: 150px; text-align: center; }
+
+.wrap-5{ background: #ebebeb; color: #363636; padding: 80px 0 140px; }
+.btn-link.active{ background: #ca3c3c; color: #fff; border-color: #ca3c3c}
+.project{ position: relative; margin: 30px 0 0 0}
+.over{background: #fff; position: absolute; bottom: 0; width: 100%; text-align: center; padding: 20px 0; display: none}
+.project:hover .over{ display: block}
+.over h3{ font-size: 18px; line-height: 40px ; color: #ca3c3c}
+.over p{  font-size: 14px; line-height: 20px; color: #898989;}
+.project img{ max-width: 100%}
+
+.seemore{ font-size: 36px; display: block; width: 32px; height: 32px; color: #ca3c3c; margin: 30px 0 0 0 }
+
+
+.wrap-6{ background: #666; color: #fff; padding: 45px 0}
+.reviews{ }
+.review{ text-align: center; display: none}
+.review p{ font-size: 36px; }
+.review p:before{ content: open-quote}
+.review p:after{ content: close-quote}
+.review img{ border-radius: 50%}
+
+.review.active{ display: block}
+
+.pager{ width: 60px; margin:25px auto }
+.pager ul{ }
+.pager ul li{ float: left; margin: 5px; }
+.pager ul li a{  display: block; width: 10px; height: 10px; border: 2px solid #fff; border-radius: 50% }
+.pager ul li a.active{ background: #fff}
+.wrap-7{ color: #363636; padding: 80px 0 140px; }
+.team{ position: relative; margin: 80px 0}
+.social{  position: absolute; top: 60px; right: 60px}
+.social ul{ }
+.social ul li{  float: left; margin: 0 5px;}
+.social ul li a{ color: #fff; background: #ca3c3c; font-size: 24px; display: block; width: 50px; line-height: 50px; text-align: center; border-radius: 50%}
+
+.left100{padding-left: 100px; padding-top: 40px }
+.left100 h3{ color: #ca3c3c; font-size: 18px; line-height: 60px}
+.left100 p{ color: #898989; font-size: 14px; margin-top: 10px}
+
+.wrap-8{ background: #666; color: #fff; text-align: center; padding: 80px 0}
+.wrap-8 span.fa{ font-size: 72px;}
+.wrap-8 p.light{ font-size: 72px;}
+.wrap-8 p b{ font-size: 18px;}
+
+
+.wrap-9{ color: #363636; padding: 80px 0 140px}
+.wrap-9 h2{ margin-bottom: 80px}
+.accordion{ }
+.accordion ul{ }
+.accordion p{ display: none; margin: 18px 0}
+.accordion ul li{ margin-bottom: 10px; color: #898989}
+.accordion ul li.active p{ display: block }
+.accordion ul li.active h4{color: #ca3c3c }
+.accordion ul li h4{ line-height: 50px; border: 1px solid #ccc; border-radius: 10px;padding: 0 20px; cursor: pointer}
+.accordion ul li span.fa{ font-size: 24px }
+.accordion ul li span.fa:first-child{ margin-right: 25px }
+.accordion ul li span.pull-right{ margin-top: 20px; font-size: 10px }
+
+.wrap-10{ background: #ca3c3c; color: #fff; padding: 19px 0}
+.wrap-10 form input[ type="email"]:focus{ outline: none}
+.wrap-10 form input[ type="email"]{ width: 100%; background: transparent; border:none; height: 42px; font-family: proximal, sans-serif;color:#fff; font-size:36px; }
+::placeholder{ color:#fff; font-size:36px;  }
+--webkit-::placeholder{ color:#fff; font-size:36px;  }
+--moz-::placeholder{ color:#fff; font-size:36px;  }
+.wrap-10 form button{ width: 90px; height: 35px; background: #fff; border: none; color: #ca3c3c; font-size: 16px; border-radius: 10px}
+
+
+.wrap-11{ background: #7f7f7f; color: #fff; padding: 25px 0}
+.wrap-12{ background: #ebebeb; color: #363636; padding: 80px 0 140px}
+.wrap-12 address{ font-style:normal; font-size: 16px; line-height: 30px; margin: 20px 0}
+
+.social-footer{ }
+.social-footer ul{ }
+.social-footer ul li{ float: left; margin: 10px; }
+.social-footer ul li a{ color: #ca3c3c; font-size: 16.22px;  }
+
+.wrap-12 form{ }
+.wrap-12 form label{ margin: 15px 0; display: block; border: 2px solid #363636; padding: 17px }
+.wrap-12 form label input{ background: transparent; border: none; font-size: 16px; width: 200px}
+.wrap-12 form label textarea{ background: transparent; border: none; font-size: 16px; vertical-align: top; height: 40px}
+.wrap-12 form button{ width: 100%; background: #fff; border:none; height: 80px; font-size:16px;   color:#ca3c3c; border-radius: 10px; margin: 15px 0}
+.wrap-12 form button span.fa{ font-size: 36px; vertical-align: middle}
+.wrap-13{ background: #252525; color: #fff; padding: 50px 0; text-align: center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
