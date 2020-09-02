@@ -1,1 +1,1 @@
-Design a high fidelity pixel-perfect mockup in Photoshop 
+Design a high fidelity pixel-perfect Website in Photoshop
